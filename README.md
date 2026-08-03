@@ -70,8 +70,22 @@
 5. Implantar → Treinamento → Manuais → Procedimentos de segurança
 6. Produção → Manutenção → Descontinuidade
 
+## Conteúdo das aulas
+
+### Aula 1 — Introdução à Engenharia de Software
+- Componentes do software: instruções, estruturas de dados e documentos
+- Características do software (não se desgasta, mas se deteriora)
+- Curva de desgaste: hardware vs software
+- Aplicações: básico, tempo real, científico/engenharia, comercial/empresarial, embutido, computador pessoal, web e IA
+- Evolução do software (1950 → atual: IoT, web, mobile)
+- Crise do software: problemas (estimativas imprecisas, insatisfação do cliente, qualidade inadequada, manutenção difícil)
+- Mitos do software: administrativo, cliente e profissional
+- Engenharia de Software como resposta à crise (IEEE)
+- **Atividade:** identificar exemplos de mercado para cada tipo de aplicação
+
 ## Arquivos no repositório
 | Arquivo | Descrição |
 |---------|-----------|
 | `material/PA - Engenharia de Software` | Programa de aulas completo |
 | `material/slides/Engenharia de Software - aula 0 CSTA.pdf` | Slides da aula 0 (apresentação da disciplina) |
+| `material/slides/Engenharia de Software - aula 1 postagem.pdf` | Slides da aula 1 (introdução, crise do software, mitos) |
