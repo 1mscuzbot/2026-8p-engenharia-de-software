@@ -83,9 +83,23 @@
 - Engenharia de Software como resposta à crise (IEEE)
 - **Atividade:** identificar exemplos de mercado para cada tipo de aplicação
 
+### Aula 2 — Conceitos e origem da Engenharia de Software
+- Definições de ES: Fritz Bauer, Ian Sommerville, IEEE e Roger Pressman (tecnologia em 3 camadas: processos, métodos e ferramentas)
+- Engenharia de Software como área: tecnologias e práticas, fundamentos científicos e mecanismos
+- Bug do Milênio (DD/MM/AA → DD/MM/AAAA, COBOL)
+- Origem: NATO Software Engineering Conference (1968) e a crise do software
+- Problemas comuns em projetos: estouro de orçamento, atraso, cancelamento e insatisfação do usuário (Standish Group)
+- Restrições de projeto: custo × tempo × tarefas (escopo)
+- SWEBOK: iniciativa da IEEE — V1 (2001), V2 (2004, 10 áreas), V3 (2013, 15 áreas), V4 (2024, 18 áreas)
+- Melhorias da V4: Agile e DevOps integrados, tecnologias emergentes (IA, ML, IoT) e reestruturação em 18 áreas de conhecimento
+- **Atividade:** resumir as 18 áreas de conhecimento do SWEBOK (1 slide por área, grupos de 3, postar no Teams)
+
+### [... - adicionar aulas posteriores aqui]
+
 ## Arquivos no repositório
 | Arquivo | Descrição |
 |---------|-----------|
 | `material/PA - Engenharia de Software` | Programa de aulas completo |
 | `material/slides/Engenharia de Software - aula 0 CSTA.pdf` | Slides da aula 0 (apresentação da disciplina) |
 | `material/slides/Engenharia de Software - aula 1 postagem.pdf` | Slides da aula 1 (introdução, crise do software, mitos) |
+| `material/slides/Engenharia de Software - aula 2.0.pdf` | Slides da aula 2 (conceitos de ES, origem, SWEBOK V4) |
