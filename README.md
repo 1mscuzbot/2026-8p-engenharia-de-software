@@ -94,6 +94,33 @@
 - Melhorias da V4: Agile e DevOps integrados, tecnologias emergentes (IA, ML, IoT) e reestruturação em 18 áreas de conhecimento
 - **Atividade:** resumir as 18 áreas de conhecimento do SWEBOK (1 slide por área, grupos de 3, postar no Teams)
 
+### Aula 2.1 — Ciclo de vida e modelos de ciclo de vida de software
+- Ciclo de vida de desenvolvimento: todos os processos, tarefas e atividades da concepção à descontinuidade/substituição
+- Funciona como esquema que mapeia fases, atividades, entregas e responsabilidades
+- Benefícios: visualizar a necessidade real, planejar melhor, correções antecipadas, manutenção facilitada, erros localizados com mais facilidade (menor custo), qualidade garantida
+- Etapas básicas: **Definição** (situação atual → problema → solução; modelagem de processos e análise do sistema; escolha do modelo), **Desenvolvimento** (projeto, prototipagem, codificação, testes e integração; obedece regras de negócio), **Operação** (treinamento, correção de erros, continuidade)
+- Modelos = forma como as etapas são organizadas / sequência das atividades de desenvolvimento e manutenção
+- **Cascata ou Clássico** (1966, formalizado ~1970): fases sequenciais, uma só inicia quando a anterior termina; fácil gestão, mas dificulta mudanças em andamento
+- **Modelo V** (Ministério de Defesa da Alemanha, 1992): cascata em "V" com ênfase em verificação e validação — cada fase da esquerda gera plano de teste executado na direita (unidade valida projeto do programa, sistema valida projeto de sistema, aceitação valida requisitos); cliente recebe a 1ª versão no final, mas com menos risco
+- **Incremental ou Iterativo**: melhoria do cascata; desenvolvimento dividido em incrementos até a versão final; ideal quando requisitos não estão claros (erro descarta só o último incremento); funcionalidade disponível mais cedo
+- **Evolutivo**: facilidade de mudanças e novas funcionalidades em tempo real; indicado para sistemas curtos/médios; alta interação com usuário; difícil limitar escopo e tempo
+- **Espiral (Barry Boehm)**: cada volta da espiral é uma fase; sem fases fixas (definidas conforme necessidade); avaliação de riscos; melhor para produtos internos da empresa
+- **Prototipação** (década de 70): não exige requisitos profundos no início; protótipo → feedback do cliente → refinamento; cliente participa do início ao fim; risco: cliente achar que o protótipo é o produto final
+- Modelo × Método: **modelo** descreve estrutura/sequência das fases (abstrato); **método** é prescritivo e operacional (técnicas, ferramentas, papéis — ex.: Scrum, XP, Cleanroom)
+- Métodos tradicionais: **RUP** (Concepção, Elaboração, Construção, Transição — iterativo e incremental, mas prescritivo), **Cleanroom** (prevenção de defeitos via desenvolvimento estatístico formal e inspeções)
+- Métodos ágeis: **Scrum** (PO, Scrum Master, time; Sprint Planning/Daily/Review/Retrospective; Product/Sprint Backlog, Increment; Sprints de 2–4 semanas), **XP** (TDD, pair programming, integração contínua, refactoring, propriedade coletiva), **Kanban** (quadro To Do/Doing/Done, limite de WIP, fluxo contínuo sem iterações fixas)
+- Métodos modernos/híbridos: **DevOps** (cultura dev+ops com CI/CD e automação), **Lean Software Development** (Toyota: eliminar desperdício, amplificar aprendizado, decidir tarde, entregar rápido), **FDD** (modelagem inicial + desenvolvimento por feature)
+- **Atividade:** pesquisar 1 exemplo de software real do modelo de ciclo de vida designado à equipe (o que faz, modelo aplicado, por quê) — grupo, arquivo colaborativo no Teams até o fim da aula
+
+### Aula 2.2 — Metodologias Ágeis
+- Mundo VUCA (volátil, incerto, complexo, ambíguo): agilidade + velocidade como resposta; métodos tradicionais não dão mais conta
+- Surgiram na indústria de software e se espalharam pelos negócios; um dos pilares da transformação digital; permitem ajustes conforme projeto/produto evoluem
+- Mudanças rápidas de clientes, tecnologia e concorrentes exigem adaptação flexível; criam aprendizado durante o processo
+- Método ágil: etapas curtas com produto pronto (vs. etapas bem definidas), ciclos iterativos e incrementais, melhoria contínua; não são contra documentação — focam no que agrega valor; exigem equipes autônomas
+- **Manifesto Ágil (2001, 17 pessoas)**: indivíduos e interações > processos e ferramentas | software em funcionamento > documentação abrangente | colaboração com o cliente > negociação de contratos | responder a mudanças > seguir um plano (há valor nos itens à direita também!)
+- Tipos: Scrum (framework p/ projetos complexos de objetivo definido), Kanban (gestão por fluxo de valor), XP (anterior ao Manifesto; equipes pequenas, escopo em constante mudança), FDD (concepção + construção por funcionalidade), Lean Startup (validar ideias: construir, medir, aprender)
+- **Atividade:** comentários no Padlet da professora — blocos azuis exigem mínimo 2 comentários por aluno (comentar + responder um colega), inscrição no Padlet obrigatória para identificação, prazo até o fim da aula; **vale como item do Estudo Dirigido do 1º bimestre**
+
 ### [... - adicionar aulas posteriores aqui]
 
 ## Arquivos no repositório
@@ -103,3 +130,6 @@
 | `material/slides/Engenharia de Software - aula 0 CSTA.pdf` | Slides da aula 0 (apresentação da disciplina) |
 | `material/slides/Engenharia de Software - aula 1 postagem.pdf` | Slides da aula 1 (introdução, crise do software, mitos) |
 | `material/slides/Engenharia de Software - aula 2.0.pdf` | Slides da aula 2 (conceitos de ES, origem, SWEBOK V4) |
+| `material/slides/Engenharia de Software - aula 2.1 ciclo de vida de software.pdf` | Slides da aula 2.1 (ciclo de vida, modelos: cascata, V, incremental, evolutivo, espiral, prototipação; métodos RUP, Cleanroom, Scrum, XP, Kanban, DevOps, Lean, FDD) |
+| `material/slides/Engenharia de Software - aula 2.2 metodologia agil.pdf` | Slides da aula 2.2 (mundo VUCA, Manifesto Ágil, tipos de métodos ágeis) |
+| `notas/tarefas.txt` | Tarefas e atividades pendentes consolidadas |

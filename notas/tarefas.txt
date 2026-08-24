@@ -1,0 +1,31 @@
+TAREFAS - ENGENHARIA DE SOFTWARE (2026-2, Prof. Patricia Rucker de Bassi)
+Atualizado em: 24/08/2026
+
+[ ] AULA 1 (27/07)
+    - Identificar exemplos de mercado para cada tipo de aplicacao de software
+      (basico, tempo real, cientifico, comercial, embutido, PC, web, IA)
+
+[ ] AULA 2 (03/08)
+    - Resumir as 18 areas de conhecimento do SWEBOK V4
+      (1 slide por area, grupos de 3, postar no Teams)
+
+[X] AULA 2.1 (10/08) - prazo: arquivo colaborativo no Teams ate o fim da aula
+    - Pesquisar 1 exemplo de software real do modelo de ciclo de vida
+      designado a equipe:
+        * o que o software faz
+        * qual modelo de ciclo de vida foi aplicado
+        * motivo da escolha do modelo
+    - Modelos distribuidos entre equipes: Cascata, Modelo V, Incremental/
+      Iterativo, Evolutivo, Espiral (Boehm), Prototipacao
+
+[ ] AULA 2.2 (17/08) - VALE ITEM DO ESTUDO DIRIGIDO DO 1o BIMESTRE
+    - Comentarios no Padlet da professora:
+        https://padlet.com/patriciadebassi/metodologias-geis-aupudoqbo8edh7vg
+        * blocos azuis: minimo 2 comentarios por aluno (comentar + responder
+          um colega), relevantes e pertinentes
+        * demais blocos: facultativo
+        * preciso se INSCREVER no Padlet para o comentario sair com meu nome
+        * prazo: ate o final da aula
+
+PROXIMAS AULAS (planejamento):
+    - 24/08: Requisitos de software (escopo, categorias, tipos, caracteristicas)
