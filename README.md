@@ -13,6 +13,11 @@
 - `projetos/` — trabalhos práticos
 - `notas/` — anotações e resumos
 
+## Notas de estudo
+- [Aula 2.1 — Ciclo de vida e modelos](notas/estudo-aula02-1-ciclo-de-vida.md)
+- [Aula 2.2 — Metodologias ágeis](notas/estudo-aula02-2-metodologias-ageis.md)
+- [Tarefas pendentes](notas/tarefas.txt)
+
 ## Conteúdo programático
 
 | Aulas | Data | Tema |
