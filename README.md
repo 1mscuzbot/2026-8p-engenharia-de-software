@@ -16,6 +16,10 @@
 ## Notas de estudo
 - [Aula 2.1 — Ciclo de vida e modelos](notas/estudo-aula02-1-ciclo-de-vida.md)
 - [Aula 2.2 — Metodologias ágeis](notas/estudo-aula02-2-metodologias-ageis.md)
+- [Aula 3.0 — Requisitos de software (RF/RNF, FURPS+)](notas/estudo-aula03-0-requisitos.md)
+- [Aula 3.1 — Elicitação: características de um bom requisito](notas/estudo-aula03-1-elicitacao.md)
+- [Rascunho ED1 — tabela Peça Certa](notas/rascunho-ed1-peca-certa-requisitos.md) · prazo **21/09**
+- [Padlet — comentários (etapa 1 do ED)](notas/padlet-comentarios.md)
 - [Tarefas pendentes](notas/tarefas.txt)
 
 ## Conteúdo programático
@@ -60,6 +64,10 @@
 - **Avaliação bimestral:** peso 7,0
 - **2ª chamada:** 30/11 (peso 7,0)
 - **Exame Final:** 07/12 (peso 10,0)
+
+### Estudo Dirigido — 1º bimestre (entregas)
+1. **Padlet** (metodologias ágeis) — atividade realizada em 24/08 — [link](https://padlet.com/patriciadebassi/metodologias-geis-aupudoqbo8edh7vg)
+2. **Tabela de requisitos Peça Certa** — código, descrição + regra de negócio, ator, tipo F/RNF (FURPS+), sem ambiguidade — postar no Teams até **21/09/2026** (grupo; um integrante posta)
 
 ## Referências
 - CMMI® for Development Version 1.3 — SEI/CMU
@@ -126,15 +134,36 @@
 - Tipos: Scrum (framework p/ projetos complexos de objetivo definido), Kanban (gestão por fluxo de valor), XP (anterior ao Manifesto; equipes pequenas, escopo em constante mudança), FDD (concepção + construção por funcionalidade), Lean Startup (validar ideias: construir, medir, aprender)
 - **Atividade:** comentários no Padlet da professora — blocos azuis exigem mínimo 2 comentários por aluno (comentar + responder um colega), inscrição no Padlet obrigatória para identificação, prazo até o fim da aula; **vale como item do Estudo Dirigido do 1º bimestre**
 
+### Aula 3.0 — Requisitos de software
+- Definições (Houaiss, Sommerville, IEEE): requisito como condição/capacidade documentada
+- Problema de vocabulário comum na indústria (Wiegers)
+- **RF** = o quê (funções, CRUD, mudanças de estado, regras de negócio)
+- **RNF** = como / qualidades: de produto, organizacionais e externos
+- Categorização **FURPS+** (IBM): Functionality, Usability, Reliability, Performance, Supportability + design, implementação, interface, físicos
+- Sintaxe: `{[sujeito + ação + objeto] + qualificação}`
+- **Atividades:** identificar RF (tabela); urna eletrônica — RNF com ≥1 item de cada FURPS+
+
+### Aula 3.1 — Elicitação de requisitos (qualidade da escrita)
+- Cinco critérios de bom requisito: **não ambíguo**, **verificável**, **determinístico**, **rastreável**, **correto**
+- Fontes de ambiguidade: pronomes, acrônimos, indeterminação (“quando possível”), conhecimento prévio assumido
+- **Atividade 1:** julgar 12 requisitos de marcação de consulta pelo celular
+- **Atividade 2:** reescrever requisitos do Zoológico e da Urna Eletrônica e postar no Teams
+- Critério de correção do ED Peça Certa (entrega 21/09)
+
 ### [... - adicionar aulas posteriores aqui]
 
 ## Arquivos no repositório
 | Arquivo | Descrição |
 |---------|-----------|
-| `material/PA - Engenharia de Software` | Programa de aulas completo |
+| `material/2026724_11561_PA - Engenharia de Software - CSTA 4 P 2026-2.pdf` | Programa de aulas completo |
+| `material/estudos dirigidos - 1o bim - engenharia software 2026-2.pdf` | Enunciado do ED 1º bim (Padlet + tabela Peça Certa até 21/09) |
 | `material/slides/Engenharia de Software - aula 0 CSTA.pdf` | Slides da aula 0 (apresentação da disciplina) |
 | `material/slides/Engenharia de Software - aula 1 postagem.pdf` | Slides da aula 1 (introdução, crise do software, mitos) |
 | `material/slides/Engenharia de Software - aula 2.0.pdf` | Slides da aula 2 (conceitos de ES, origem, SWEBOK V4) |
-| `material/slides/Engenharia de Software - aula 2.1 ciclo de vida de software.pdf` | Slides da aula 2.1 (ciclo de vida, modelos: cascata, V, incremental, evolutivo, espiral, prototipação; métodos RUP, Cleanroom, Scrum, XP, Kanban, DevOps, Lean, FDD) |
-| `material/slides/Engenharia de Software - aula 2.2 metodologia agil.pdf` | Slides da aula 2.2 (mundo VUCA, Manifesto Ágil, tipos de métodos ágeis) |
+| `material/slides/Engenharia de Software - aula 2.1 ciclo de vida de software.pdf` | Slides da aula 2.1 (ciclo de vida e modelos/métodos) |
+| `material/slides/Engenharia de Software - aula 2.2 metodologia agil.pdf` | Slides da aula 2.2 (VUCA, Manifesto Ágil) |
+| `material/slides/Engenharia de Software - aula 3.0 - requisitos 2026.pdf` | Slides da aula 3.0 (RF/RNF, FURPS+) |
+| `material/slides/Engenharia de Software - aula 3.1 - elicitação de requisitos (1).pdf` | Slides da aula 3.1 (qualidade do requisito) |
+| `notas/atividade pratica - requisitos Peca Certa.pdf` | Estudo de caso PeçaCerta Auto Peças (ED) |
+| `notas/rascunho-ed1-peca-certa-requisitos.md` | Rascunho da tabela de requisitos do ED |
 | `notas/tarefas.txt` | Tarefas e atividades pendentes consolidadas |

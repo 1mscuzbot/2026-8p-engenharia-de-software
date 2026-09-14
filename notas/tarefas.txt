@@ -1,5 +1,5 @@
 TAREFAS - ENGENHARIA DE SOFTWARE (2026-2, Prof. Patricia Rucker de Bassi)
-Atualizado em: 24/08/2026
+Atualizado em: 14/09/2026
 
 [ ] AULA 1 (27/07)
     - Identificar exemplos de mercado para cada tipo de aplicacao de software
@@ -11,21 +11,31 @@ Atualizado em: 24/08/2026
 
 [X] AULA 2.1 (10/08) - prazo: arquivo colaborativo no Teams ate o fim da aula
     - Pesquisar 1 exemplo de software real do modelo de ciclo de vida
-      designado a equipe:
-        * o que o software faz
-        * qual modelo de ciclo de vida foi aplicado
-        * motivo da escolha do modelo
-    - Modelos distribuidos entre equipes: Cascata, Modelo V, Incremental/
-      Iterativo, Evolutivo, Espiral (Boehm), Prototipacao
+      designado a equipe
 
-[ ] AULA 2.2 (17/08) - VALE ITEM DO ESTUDO DIRIGIDO DO 1o BIMESTRE
-    - Comentarios no Padlet da professora:
-        https://padlet.com/patriciadebassi/metodologias-geis-aupudoqbo8edh7vg
-        * blocos azuis: minimo 2 comentarios por aluno (comentar + responder
-          um colega), relevantes e pertinentes
-        * demais blocos: facultativo
-        * preciso se INSCREVER no Padlet para o comentario sair com meu nome
-        * prazo: ate o final da aula
+[X] AULA 2.2 / ED etapa 1 — Padlet (ED registra data 24/08)
+    - Comentarios no Padlet:
+      https://padlet.com/patriciadebassi/metodologias-geis-aupudoqbo8edh7vg
+    - Rascunhos em notas/padlet-comentarios.md
 
-PROXIMAS AULAS (planejamento):
-    - 24/08: Requisitos de software (escopo, categorias, tipos, caracteristicas)
+[ ] AULA 3.0 (24/08–31/08) — Requisitos
+    - Atividade 1: identificar RF (tabela em anexo) — individual
+    - Atividade 2: urna eletronica — RNF + FURPS+ (>=1 de cada)
+
+[ ] AULA 3.1 (14/09) — Elicitacao / qualidade
+    - Atividade 1: julgar 12 requisitos (marcacao de consulta) pelos 5 criterios
+    - Atividade 2: reescrever requisitos Zoologico + Urna e postar no Teams
+
+[!] ED 1o BIM — ETAPA 2 (PRAZO 21/09/2026) — MESMO DIA DA PROVA
+    - Tabela de TODOS os requisitos do Peca Certa:
+        codigo | descricao + regra de negocio | ator | tipo F/RNF (FURPS+)
+    - Sem ambiguidade (criterios da aula 3.1)
+    - Em grupo; nomes no arquivo; UM integrante posta no Teams
+    - Estudo de caso: notas/atividade pratica - requisitos Peca Certa.pdf
+    - Rascunho inicial: notas/rascunho-ed1-peca-certa-requisitos.md
+
+[!] PROVA 1o BIMESTRE: 21/09/2026
+
+PROXIMAS AULAS:
+    - 28/09: Construcao de software; etapas do SWEBOK
+    - 05/10: Pesquisa e analise sobre o SWEBOK
