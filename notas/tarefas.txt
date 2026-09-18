@@ -1,41 +1,18 @@
 TAREFAS - ENGENHARIA DE SOFTWARE (2026-2, Prof. Patricia Rucker de Bassi)
-Atualizado em: 14/09/2026
+Atualizado em: 17/09/2026
 
-[ ] AULA 1 (27/07)
-    - Identificar exemplos de mercado para cada tipo de aplicacao de software
-      (basico, tempo real, cientifico, comercial, embutido, PC, web, IA)
-
-[ ] AULA 2 (03/08)
-    - Resumir as 18 areas de conhecimento do SWEBOK V4
-      (1 slide por area, grupos de 3, postar no Teams)
-
-[X] AULA 2.1 (10/08) - prazo: arquivo colaborativo no Teams ate o fim da aula
-    - Pesquisar 1 exemplo de software real do modelo de ciclo de vida
-      designado a equipe
-
-[X] AULA 2.2 / ED etapa 1 — Padlet (ED registra data 24/08)
-    - Comentarios no Padlet:
-      https://padlet.com/patriciadebassi/metodologias-geis-aupudoqbo8edh7vg
-    - Rascunhos em notas/padlet-comentarios.md
-
-[ ] AULA 3.0 (24/08–31/08) — Requisitos
-    - Atividade 1: identificar RF (tabela em anexo) — individual
-    - Atividade 2: urna eletronica — RNF + FURPS+ (>=1 de cada)
-
-[ ] AULA 3.1 (14/09) — Elicitacao / qualidade
-    - Atividade 1: julgar 12 requisitos (marcacao de consulta) pelos 5 criterios
-    - Atividade 2: reescrever requisitos Zoologico + Urna e postar no Teams
+[X] AULA 2.1 — exemplo de ciclo de vida (Teams)
+[X] AULA 2.2 / ED etapa 1 — Padlet (24/08)
+[X] Material aulas 3.0 e 3.1 no repo
 
 [!] ED 1o BIM — ETAPA 2 (PRAZO 21/09/2026) — MESMO DIA DA PROVA
-    - Tabela de TODOS os requisitos do Peca Certa:
-        codigo | descricao + regra de negocio | ator | tipo F/RNF (FURPS+)
-    - Sem ambiguidade (criterios da aula 3.1)
-    - Em grupo; nomes no arquivo; UM integrante posta no Teams
-    - Estudo de caso: notas/atividade pratica - requisitos Peca Certa.pdf
-    - Rascunho inicial: notas/rascunho-ed1-peca-certa-requisitos.md
+    - Arquivo pronto: notas/ED1-PecaCerta-entrega.docx
+    - Preencher NOMES do grupo no cabecalho
+    - UM integrante posta no Teams
 
 [!] PROVA 1o BIMESTRE: 21/09/2026
+    - Revisao: notas/estudo-prova1-ajuda-gabarito.md
+    - PDF: notas/Ajuda-res.prova-1bim.pdf
 
 PROXIMAS AULAS:
     - 28/09: Construcao de software; etapas do SWEBOK
-    - 05/10: Pesquisa e analise sobre o SWEBOK
