@@ -1,14 +1,13 @@
 # Estudo Dirigido 1º bimestre — Peça Certa (ENTREGA)
 
 **Disciplina:** Engenharia de Software — Prof.ª Patricia Rucker de Bassi  
-**Etapa 2 do ED:** tabela de requisitos do estudo de caso PeçaCerta Auto Peças  
-**Prazo Teams:** **21/09/2026** · um integrante posta · incluir nomes do grupo  
+**Etapa 2 do ED:** tabela de levantamento de requisitos — PeçaCerta Auto Peças  
+**Prazo Teams:** **21/09/2026**
 
-**Colunas:** Código | Descrição (com regra de negócio) | Ator | Tipo (F / RNF + FURPS+)
+**Colunas:** Código | Descrição (incluindo regra de negócio) | Ator | Tipo (F / RNF + FURPS+)
 
-> Versão de entrega (requisitos sem ambiguidade; RNF verificáveis). Ajuste só os **nomes do grupo** antes de postar.
-
-**Integrantes:** _[preencher]_ · _[preencher]_ · _[preencher]_
+**Aluno:** Lucas Müller Scuzziato  
+**Observação:** atividade prevista em grupo; nesta entrega o grupo é composto apenas pelo aluno acima.
 
 ---
 
@@ -34,7 +33,7 @@
 
 ## Requisitos não-funcionais (FURPS+)
 
-| Código | Descrição | Ator / stakeholder | Tipo FURPS+ |
+| Código | Descrição | Ator / responsável | Tipo FURPS+ |
 |--------|-----------|--------------------|-------------|
 | RNF001 | O sistema deve ser aplicação web executável no SO Windows com navegador Google Chrome nas máquinas atuais da loja. | TI | + Implementação |
 | RNF002 | Todas as telas do sistema devem exibir a logo da PeçaCerta. | Marketing | U — Usability / + Interface |
@@ -44,12 +43,3 @@
 | RNF006 | A arquitetura deve ser web, permitindo evolução futura para e-commerce sem reescrita completa do núcleo de cadastros. | Negócio / TI | S — Supportability |
 | RNF007 | Em condições normais de rede local, a busca de produto por código deve retornar o resultado em no máximo **3 segundos**. | Atendente / TI | P — Performance |
 | RNF008 | O acesso às funções de venda e estoque deve exigir autenticação; usuários não autenticados não devem registrar movimentações. | TI / Gerente | R — Reliability (segurança) |
-
----
-
-## Observações para o post no Teams
-
-1. Copiar esta tabela para Word/Excel (ou usar o `.docx` gerado em `notas/ED1-PecaCerta-entrega.docx`).
-2. Preencher os nomes dos integrantes no cabeçalho.
-3. Um integrante posta em **Tarefas** até **21/09/2026**.
-4. Etapa 1 (Padlet) já foi em 24/08 — manter registro se o professor pedir o ED completo.

@@ -7,8 +7,8 @@ Atualizado em: 17/09/2026
 
 [!] ED 1o BIM — ETAPA 2 (PRAZO 21/09/2026) — MESMO DIA DA PROVA
     - Arquivo pronto: notas/ED1-PecaCerta-entrega.docx
-    - Preencher NOMES do grupo no cabecalho
-    - UM integrante posta no Teams
+    - Grupo individual: Lucas Müller Scuzziato
+    - Postar nas Tarefas do Teams
 
 [!] PROVA 1o BIMESTRE: 21/09/2026
     - Revisao: notas/estudo-prova1-ajuda-gabarito.md
