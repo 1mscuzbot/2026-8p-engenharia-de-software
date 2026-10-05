@@ -14,5 +14,11 @@ Atualizado em: 17/09/2026
     - Revisao: notas/estudo-prova1-ajuda-gabarito.md
     - PDF: notas/Ajuda-res.prova-1bim.pdf
 
+[X] AULA 04.0 — atividade de construcao (05/10/2026)
+    - Resposta: notas/atividade-aula04-construcao.md
+    - Ferramenta: Grok
+    - Slide local ainda nao commitado: material/slides/Engenharia de Software - aula 04.0 - construcao de software.pdf
+
 PROXIMAS AULAS:
-    - 28/09: Construcao de software; etapas do SWEBOK
+    - 12/10: Feriado
+    - 19/10: Gerenciamento de configuracao de software
