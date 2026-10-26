@@ -1,7 +1,7 @@
 # Atividade — Code Smells e Refatoração
 
 Integrante: Lucas Muller Scuzziato  
-LLM: ChatGPT
+LLM: ChatGPT (versão gratuita / GPT-4o mini)
 
 ---
 
