@@ -1,46 +1,20 @@
 # Atividade — Code Smells e Refatoração
 
-**Disciplina:** Engenharia de Software  
-**Professora:** Patricia Rucker de Bassi  
-**Tema:** Tornar o código mais compreensível / evitar code smells  
-**Integrante:** Lucas Muller Scuzziato  
-**Data:** 26/10/2026  
-**Material de apoio:** slides da aula 4.2 — Manutenção de software  
-(`material/slides/Engenharia de Software - aula 4.2 - manutencao de software.pdf`)
-
-**Consulta a LLM:** a pesquisa e a organização dos exemplos foram feitas com **ChatGPT** (versão gratuita / GPT básico).
+Integrante: Lucas Muller Scuzziato  
+LLM: ChatGPT
 
 ---
 
-## Introdução
+## 1. Long Method
 
-Code smells são indícios de que o código pode estar difícil de entender, alterar ou testar. Não são bugs por si só, mas aumentam o custo de manutenção. Abaixo, três smells clássicos, cada um com benefícios da refatoração, como refatorar e um exemplo curto em **Python** (versão com smell e versão refatorada).
+**Benefício:** funções menores são mais fáceis de ler, testar e alterar.
 
----
+**Como refatorar:** extrair blocos com responsabilidade clara para funções nomeadas (Extract Method); a função original só orquestra.
 
-## 1. Long Method (Método Longo)
-
-### 1.1 Nome do Code Smell
-**Long Method** — um método/função faz muitas coisas de uma vez e fica longo demais para ser lido de uma só vez.
-
-### 1.2 Benefícios de refatorar
-- Fica mais fácil entender a intenção de cada trecho.
-- Facilita testes unitários (funções menores e focadas).
-- Reduz risco de misturar responsabilidades e esconder bugs.
-- Torna futuras alterações mais localizadas.
-
-### 1.3 Como refatorar
-1. Identificar blocos com responsabilidade clara (validação, cálculo, formatação, etc.).
-2. Extrair cada bloco para uma função com nome que descreva o *quê* ela faz (**Extract Method**).
-3. Deixar a função original como orquestração curta que chama as partes.
-
-### 1.4 Exemplo em Python
-
-**Com smell (Long Method):**
+**Com smell:**
 
 ```python
 def processar_pedido(itens, cupom):
-    # valida, calcula, aplica desconto e monta o texto — tudo numa função só
     total = 0
     for item in itens:
         if item["qtd"] <= 0 or item["preco"] < 0:
@@ -94,26 +68,13 @@ def processar_pedido(itens, cupom):
 
 ---
 
-## 2. Duplicate Code (Código Duplicado)
+## 2. Duplicate Code
 
-### 2.1 Nome do Code Smell
-**Duplicate Code** — o mesmo (ou quase o mesmo) trecho de lógica aparece em mais de um lugar.
+**Benefício:** correção e mudança de regra em um só lugar; menos inconsistência.
 
-### 2.2 Benefícios de refatorar
-- Correção de bug ou mudança de regra é feita em um único ponto.
-- Menos chance de inconsistência entre cópias “quase iguais”.
-- Código mais curto e mais fácil de revisar.
-- Facilita reuso consciente.
+**Como refatorar:** extrair a lógica comum para uma função compartilhada e substituir as cópias por chamadas.
 
-### 2.3 Como refatorar
-1. Localizar trechos iguais ou muito parecidos.
-2. Extrair a lógica comum para uma função/módulo compartilhado (**Extract Method** / **Pull Up Method**).
-3. Substituir as cópias por chamadas a essa abstração.
-4. Se houver pequenas variações, parametrizar em vez de copiar.
-
-### 2.4 Exemplo em Python
-
-**Com smell (Duplicate Code):**
+**Com smell:**
 
 ```python
 def media_turma_a(notas):
@@ -141,36 +102,20 @@ def media(notas):
     if not notas:
         return 0.0
     return sum(notas) / len(notas)
-
-
-# Uso: media(notas_a), media(notas_b), media(notas_c)
 ```
 
 ---
 
-## 3. Magic Numbers (Números Mágicos)
+## 3. Magic Numbers
 
-### 3.1 Nome do Code Smell
-**Magic Numbers** — literais numéricos (ou strings “soltas”) aparecem no código sem nome que explique o significado.
+**Benefício:** o valor ganha significado; mudança de regra fica centralizada.
 
-### 3.2 Benefícios de refatorar
-- O leitor entende *por que* aquele valor existe.
-- Mudança de regra de negócio (ex.: limite, taxa) fica centralizada.
-- Menos erros ao alterar o mesmo número em vários pontos.
-- Código mais autodocumentado.
+**Como refatorar:** nomear literais importantes como constantes e reutilizá-las.
 
-### 3.3 Como refatorar
-1. Dar nome significativo a cada literal importante (constante ou variável bem nomeada).
-2. Agrupar constantes relacionadas no topo do módulo ou em um lugar único de configuração.
-3. Evitar repetir o mesmo literal espalhado pelo código.
-
-### 3.4 Exemplo em Python
-
-**Com smell (Magic Numbers):**
+**Com smell:**
 
 ```python
 def calcular_frete(peso_kg, distancia_km):
-    # O que significam 5, 2.5, 0.15 e 12?
     if peso_kg > 5:
         return 12 + distancia_km * 0.15
     return 2.5 + distancia_km * 0.15
@@ -189,13 +134,3 @@ def calcular_frete(peso_kg, distancia_km):
     taxa_base = TAXA_BASE_PESADO if peso_kg > PESO_LIMITE_KG else TAXA_BASE_LEVE
     return taxa_base + distancia_km * TAXA_POR_KM
 ```
-
----
-
-## Conclusão
-
-Os três smells tratados — **Long Method**, **Duplicate Code** e **Magic Numbers** — atrapalham a compreensão e a evolução do código. Refatorar com extrair métodos, eliminar duplicação e nomear constantes deixa o software mais legível, testável e barato de manter, alinhado às boas práticas de manutenção de software.
-
----
-
-*Entrega individual — Lucas Muller Scuzziato · consulta realizada com ChatGPT (gratuito / GPT básico).*
