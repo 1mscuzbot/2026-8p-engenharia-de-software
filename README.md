@@ -20,6 +20,7 @@
 - [Aula 3.0 — Requisitos de software (RF/RNF, FURPS+)](notas/estudo-aula03-0-requisitos.md)
 - [Aula 3.1 — Elicitação: características de um bom requisito](notas/estudo-aula03-1-elicitacao.md)
 - [Atividade Aula 04.0 — Construção de software (Grok)](notas/atividade-aula04-construcao.md)
+- [Atividade Code Smells 26/10 — Lucas Muller Scuzziato](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.md) · [PDF](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.pdf)
 - [**ED1 Peça Certa — entrega**](notas/ED1-PecaCerta-entrega.md) · [`.docx`](notas/ED1-PecaCerta-entrega.docx) · prazo **21/09**
 - [**Revisão prova 1 — completa**](notas/revisao-prova1-completo.md) · gabarito curto: [estudo-prova1-ajuda-gabarito.md](notas/estudo-prova1-ajuda-gabarito.md) · PDF: `notas/Ajuda-res.prova-1bim.pdf` · canvas: [canvases/revisao-es-prova1.canvas.tsx](canvases/revisao-es-prova1.canvas.tsx)
 - [Padlet — comentários (etapa 1 do ED)](notas/padlet-comentarios.md)
