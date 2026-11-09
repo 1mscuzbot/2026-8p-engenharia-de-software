@@ -1,24 +1,31 @@
 TAREFAS - ENGENHARIA DE SOFTWARE (2026-2, Prof. Patricia Rucker de Bassi)
-Atualizado em: 17/09/2026
+Atualizado em: 09/11/2026
 
 [X] AULA 2.1 — exemplo de ciclo de vida (Teams)
 [X] AULA 2.2 / ED etapa 1 — Padlet (24/08)
 [X] Material aulas 3.0 e 3.1 no repo
 
-[!] ED 1o BIM — ETAPA 2 (PRAZO 21/09/2026) — MESMO DIA DA PROVA
-    - Arquivo pronto: notas/ED1-PecaCerta-entrega.docx
-    - Grupo individual: Lucas Müller Scuzziato
-    - Postar nas Tarefas do Teams
+[X] ED 1o BIM — ETAPA 2
+    - Arquivo: notas/ED1-PecaCerta-entrega.docx
 
-[!] PROVA 1o BIMESTRE: 21/09/2026
+[X] PROVA 1o BIMESTRE: 21/09/2026
     - Revisao: notas/estudo-prova1-ajuda-gabarito.md
-    - PDF: notas/Ajuda-res.prova-1bim.pdf
 
 [X] AULA 04.0 — atividade de construcao (05/10/2026)
     - Resposta: notas/atividade-aula04-construcao.md
-    - Ferramenta: Grok
-    - Slide local ainda nao commitado: material/slides/Engenharia de Software - aula 04.0 - construcao de software.pdf
 
-PROXIMAS AULAS:
-    - 12/10: Feriado
-    - 19/10: Gerenciamento de configuracao de software
+[X] AULA 4.2 — code smells / refatoracao (26/10)
+    - Resposta: projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.md
+
+[!] AULA 4.3 — qualidade de software (SQuaRE) — POSTAR NO TEAMS
+    - Slide: material/slides/Engenharia de Software - aula 4.3 - qualidade de software.pdf
+    - Estudo: notas/estudo-aula04-3-qualidade-de-software.md
+    - Resposta pronta: projetos/atividade-aula04-3-square-Lucas_Muller_Scuzziato.md
+    - Copia colar (PC da faculdade): docs/es-aula43-tarefa.md no Project store
+    - Individual; postar nas Tarefas do Teams ate o final da aula
+
+PROXIMAS (plano README):
+    - 16/11: Qualidade de software (se ainda nao coberta em aula)
+    - 23/11: Metricas + Avaliacao 2o bimestre
+    - 30/11: 2a chamada + ED
+    - 07/12: Exame final
