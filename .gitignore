@@ -9,3 +9,17 @@ node_modules/
 *.log
 .vscode/
 .idea/
+
+# LaTeX auxiliares (PDF final versionado)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.bcf
+*.run.xml
