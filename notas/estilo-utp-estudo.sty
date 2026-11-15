@@ -1,0 +1,106 @@
+% Estilo mínimo ABNT/UTP extraído de tcc-nas-utp/packages/abnt-UTP.sty
+% para documentos curtos (estudo dirigido). Não altera o repositório do TCC.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{estilo-utp-estudo}[2026/11/15 Estilo UTP mínimo para estudo dirigido]
+
+\usepackage[a4paper,vmargin={3.0cm,2.0cm},hmargin={3.0cm,2.0cm}]{geometry}
+
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+
+\usepackage[
+    alf,
+    abnt-and-type=e,
+    abnt-etal-text=it,
+    abnt-etal-cite=2,
+    abnt-etal-list=3,
+    abnt-emphasize=bf
+]{abntex2cite}
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+\usepackage{caption}
+
+\usepackage{times}
+\renewcommand*\familydefault{\sfdefault}
+
+\sloppy
+\tolerance=9999999
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.0cm}
+
+% Hierarquia visual das seções (igual ao TCC UTP).
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\normalfont}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\normalfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\normalfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\setlength\afterchapskip{.6cm}
+\setlength\aftersecskip{.4cm}
+\setlength\aftersubsecskip{.4cm}
+\setlength\aftersubsubsecskip{.4cm}
+
+% Página: número no cabeçalho (estilo UTP).
+\makepagestyle{estiloutp}
+\makeevenhead{estiloutp}{}{}{\scriptsize{\thepage}}
+\makeoddhead{estiloutp}{}{}{\scriptsize{\thepage}}
+\makeevenfoot{estiloutp}{}{}{}
+\makeoddfoot{estiloutp}{}{}{}
+
+\makepagestyle{abntchapfirst}
+\makeoddhead{abntchapfirst}{}{}{\scriptsize\thepage}
+
+\renewcommand{\textual}{%
+    \pagestyle{estiloutp}%
+    \aliaspagestyle{chapter}{abntchapfirst}%
+    \nouppercaseheads%
+    \bookmarksetup{startatroot}%
+}
+
+\addto\captionsbrazil{%
+    \renewcommand{\bibname}{REFERÊNCIAS}
+}
+
+% Capa simples para estudo dirigido (disciplina + aluno + título).
+\renewcommand{\imprimircapa}{%
+    \begin{capa}%
+        \centering
+        {\bfseries\large\MakeUppercase{\imprimirinstituicao}\par}
+        \vspace*{0.6cm}
+        {\bfseries\large\MakeUppercase{Engenharia de Software}\par}
+        \vspace*{0.35cm}
+        {\normalsize Estudo dirigido\par}
+        \vspace*{1.4cm}
+
+        {\bfseries\large\MakeUppercase{\imprimirautor}\par}
+        \vfill
+
+        {\bfseries\large\MakeUppercase{\imprimirtitulo}\par}
+        \vfill
+
+        {\bfseries\large\MakeUppercase{\imprimirlocal}\par}
+        \vspace*{0.2cm}
+        {\bfseries\large\MakeUppercase{\imprimirdata}\par}
+
+    \end{capa}
+}
+
+\makeatletter
+\@ifpackageloaded{url}{%
+\addtociteoptionlist{abnt-url-package=url}
+\def\UrlLeft{}
+\def\UrlRight{}
+\urlstyle{same}}{}
+\makeatother
+
+% hyperref já é carregado pelo abntex2; não reconfigurar colorlinks aqui.

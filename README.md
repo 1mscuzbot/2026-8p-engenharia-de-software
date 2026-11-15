@@ -21,7 +21,7 @@
 - [Aula 3.1 — Elicitação: características de um bom requisito](notas/estudo-aula03-1-elicitacao.md)
 - [Atividade Aula 04.0 — Construção de software (Grok)](notas/atividade-aula04-construcao.md)
 - [Aula 4.3 — Qualidade de software (SQuaRE)](notas/estudo-aula04-3-qualidade-de-software.md)
-- [Estudo dirigido — Desenvolvimento colaborativo (3 Cs, Git, ágil, DevOps)](notas/estudo-desenvolvimento-colaborativo.md)
+- [Estudo dirigido — Desenvolvimento colaborativo (3 Cs, Git, ágil, DevOps)](notas/estudo-desenvolvimento-colaborativo.md) · [PDF ABNT/UTP](notas/estudo-desenvolvimento-colaborativo.pdf) · [fonte LaTeX](notas/estudo-desenvolvimento-colaborativo.tex)
 - [Atividade Aula 4.3 — SQuaRE (Lucas Müller Scuzziato)](projetos/atividade-aula04-3-square-Lucas_Muller_Scuzziato.md)
 - [Atividade Code Smells 26/10 — Lucas Muller Scuzziato](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.md) · [PDF](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.pdf)
 - [**ED1 Peça Certa — entrega**](notas/ED1-PecaCerta-entrega.md) · [`.docx`](notas/ED1-PecaCerta-entrega.docx) · prazo **21/09**
