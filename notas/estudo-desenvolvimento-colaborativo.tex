@@ -16,13 +16,12 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning, calc, shapes.geometric, fit}
 
-\titulo{Desenvolvimento colaborativo de software:\\
-3 Cs, Git/GitHub, metodologias ágeis e DevOps/CI/CD}
+\titulo{Estudo dirigido: desenvolvimento colaborativo de software}
 \autor{Lucas Muller Scuzziato}
 \instituicao{Universidade Tuiuti do Paraná}
 \local{Curitiba}
 \data{\the\year}
-\preambulo{Estudo dirigido da disciplina Engenharia de Software.}
+\preambulo{Disciplina Engenharia de Software --- 3 Cs, Git/GitHub, metodologias ágeis e DevOps/CI/CD.}
 
 \begin{document}
 
@@ -95,33 +94,20 @@ Além disso, o contexto atual (times distribuídos, \textit{open source}, produt
 \section{Git, GitHub e o desenvolvimento colaborativo}
 \label{sec:git}
 
-Sistemas de controle de versão distribuídos, como o \textbf{Git}, e plataformas como o \textbf{GitHub}, materializam os 3 Cs no fluxo diário do time \cite{chacon2014}. A Figura~\ref{fig:fluxo-git} resume o fluxo típico de \textit{branch}, \textit{pull request} e \textit{merge}.
+Sistemas de controle de versão distribuídos, como o \textbf{Git}, e plataformas como o \textbf{GitHub}, materializam os 3 Cs no fluxo diário do time \cite{chacon2014}. A Figura~\ref{fig:fluxo-git} ilustra um modelo de ramificação (\textit{branching}); a Figura~\ref{fig:mr-plataforma} mostra a tela de um \textit{Merge Request} (análogo ao \textit{Pull Request} do GitHub), com discussão, revisão e integração da mudança.
 
 \begin{center}
-\begin{tikzpicture}[
-  font=\scriptsize\sffamily,
-  node distance=0.55cm and 0.7cm,
-  fluxo/.style={draw, rounded corners=2pt, align=center, inner sep=5pt, minimum width=2.35cm, minimum height=0.95cm},
-  arr/.style={-{Latex}, thick}
-]
-  \node[fluxo, fill=gray!15] (main) {\textbf{main}\\linha principal};
-  \node[fluxo, fill=blue!10, right=of main] (branch) {\textbf{branch}\\feature/fix};
-  \node[fluxo, fill=orange!12, right=of branch] (commits) {\textbf{commits}\\histórico local};
-  \node[fluxo, fill=yellow!18, right=of commits] (pr) {\textbf{Pull Request}\\discussão + review};
-  \node[fluxo, fill=green!12, below=1.1cm of pr] (merge) {\textbf{merge}\\integra em main};
-  \node[fluxo, fill=cyan!10, left=of merge] (issues) {\textbf{Issues}\\tarefas / bugs};
-
-  \draw[arr] (main) -- (branch);
-  \draw[arr] (branch) -- (commits);
-  \draw[arr] (commits) -- (pr);
-  \draw[arr] (pr) -- (merge);
-  \draw[arr] (merge) -| (main);
-  \draw[arr, dashed] (issues) -- (branch);
-  \draw[arr, dashed] (issues) -- (pr);
-\end{tikzpicture}
-\captionof{figure}{Fluxo colaborativo com Git/GitHub: \textit{branch}, \textit{commits}, \textit{pull request}, \textit{review} e \textit{merge}.}
+\includegraphics[width=0.92\textwidth]{oneflow-git-branching.png}
+\captionof{figure}{Modelo de ramificação Git (OneFlow): desenvolvimento em \textit{branches} e integração na linha principal.}
 \label{fig:fluxo-git}
-\fonte{Elaboração própria, inspirada no fluxo descrito em Chacon e Straub \cite{chacon2014}.}
+\fonte{Wikimedia Commons --- \textit{OneFlow Example.png}, autor Qeef, licença CC BY-SA 4.0. Disponível em: \url{https://commons.wikimedia.org/wiki/File:OneFlow_Example.png}.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.95\textwidth]{gitlab-merge-request.png}
+\captionof{figure}{Exemplo de plataforma: \textit{Merge Request} no GitLab (equivalente conceitual ao \textit{Pull Request} do GitHub), com descrição, discussão e revisão.}
+\label{fig:mr-plataforma}
+\fonte{Wikimedia Commons --- \textit{GitLab Merge Request.png}, GitLab, Inc., licença MIT. Disponível em: \url{https://commons.wikimedia.org/wiki/File:GitLab_Merge_Request.png}.}
 \end{center}
 
 \textbf{Histórico e espaço compartilhado (cooperação).} O repositório é o \textit{workspace} comum: cada \textit{commit} registra \textit{quem} mudou \textit{o quê} e \textit{por quê}. O histórico permite auditar decisões, reverter regressões e entender a evolução do produto --- base da cooperação assíncrona.
@@ -137,34 +123,13 @@ Em termos dos 3 Cs: o GitHub não ``substitui'' a colaboração humana; ele \tex
 \section{Metodologias ágeis e desenvolvimento colaborativo}
 \label{sec:ageis}
 
-O Manifesto Ágil \cite{beck2001} coloca a colaboração no centro: valoriza \textbf{indivíduos e interações} mais que processos e ferramentas, e \textbf{colaboração com o cliente} mais que negociação contratual rígida. As metodologias ágeis não são apenas ``ciclos curtos''; são conjuntos de práticas que forçam os 3 Cs de forma recorrente. A Figura~\ref{fig:scrum} ilustra o ciclo Scrum e um quadro de fluxo típico.
+O Manifesto Ágil \cite{beck2001} coloca a colaboração no centro: valoriza \textbf{indivíduos e interações} mais que processos e ferramentas, e \textbf{colaboração com o cliente} mais que negociação contratual rígida. As metodologias ágeis não são apenas ``ciclos curtos''; são conjuntos de práticas que forçam os 3 Cs de forma recorrente. A Figura~\ref{fig:scrum} mostra um quadro físico no estilo Scrum/Kanban usado para visualizar o fluxo de trabalho.
 
 \begin{center}
-\begin{tikzpicture}[
-  font=\scriptsize\sffamily,
-  node distance=0.45cm and 0.55cm,
-  box/.style={draw, rounded corners=2pt, align=center, inner sep=4pt, minimum height=0.85cm},
-  col/.style={draw, align=center, inner sep=4pt, minimum width=2.1cm, minimum height=2.6cm},
-  arr/.style={-{Latex}, thick}
-]
-  \node[box, fill=blue!8, minimum width=2.4cm] (backlog) {\textbf{Product}\\Backlog};
-  \node[box, fill=orange!10, minimum width=2.4cm, right=of backlog] (sprintb) {\textbf{Sprint}\\Backlog};
-  \node[box, fill=green!10, minimum width=2.4cm, right=of sprintb] (sprint) {\textbf{Sprint}\\(1--4 sem.)};
-  \node[box, fill=yellow!15, minimum width=2.4cm, right=of sprint] (incr) {\textbf{Incremento}\\revisável};
-  \draw[arr] (backlog) -- (sprintb);
-  \draw[arr] (sprintb) -- (sprint);
-  \draw[arr] (sprint) -- (incr);
-  \node[below=0.15cm of sprint, font=\tiny\sffamily] {Daily · Planning · Review · Retro};
-
-  \node[below=1.35cm of sprintb, font=\small\sffamily\bfseries] (boardtitle) {Quadro de fluxo (exemplo)};
-  \node[col, fill=gray!8, below=0.35cm of boardtitle.west, anchor=north west, xshift=-1.6cm] (todo) {\textbf{A fazer}\\[0.3em]US-12\\US-18\\US-21};
-  \node[col, fill=blue!6, right=0.35cm of todo] (doing) {\textbf{Em progresso}\\[0.3em]US-09\\US-14};
-  \node[col, fill=orange!8, right=0.35cm of doing] (review) {\textbf{Review}\\[0.3em]US-07};
-  \node[col, fill=green!8, right=0.35cm of review] (done) {\textbf{Pronto}\\[0.3em]US-03\\US-05};
-\end{tikzpicture}
-\captionof{figure}{Ciclo Scrum e exemplo de quadro ágil (fluxo de \textit{user stories}).}
+\includegraphics[width=0.92\textwidth]{simple-kanban-board.jpg}
+\captionof{figure}{Quadro ágil físico (Scrum/Kanban): colunas de estado e cartões de tarefas visíveis ao time.}
 \label{fig:scrum}
-\fonte{Elaboração própria, a partir do Manifesto Ágil \cite{beck2001} e práticas Scrum/Kanban usuais.}
+\fonte{Wikimedia Commons --- \textit{Simple-kanban-board-.jpg}, autor Jeff.lasovski, licença CC BY-SA 3.0. Disponível em: \url{https://commons.wikimedia.org/wiki/File:Simple-kanban-board-.jpg}.}
 \end{center}
 
 \subsection{Scrum}
@@ -182,31 +147,13 @@ Kanban torna o fluxo e os gargalos visíveis (coordenação); \textit{user stori
 \section{DevOps, CI/CD e colaboração entre times}
 \label{sec:devops}
 
-Historicamente, desenvolvimento e operações trabalhavam em silos: o time de \textit{dev} ``jogava o build por cima do muro'' e o time de \textit{ops} sofria para colocar em produção. \textbf{DevOps} responde a esse problema cultural e técnico: compartilhar responsabilidade pelo ciclo completo --- do \textit{commit} à operação em produção --- com automação e \textit{feedback} rápido. A Figura~\ref{fig:cicd} sintetiza um \textit{pipeline} típico.
+Historicamente, desenvolvimento e operações trabalhavam em silos: o time de \textit{dev} ``jogava o build por cima do muro'' e o time de \textit{ops} sofria para colocar em produção. \textbf{DevOps} responde a esse problema cultural e técnico: compartilhar responsabilidade pelo ciclo completo --- do \textit{commit} à operação em produção --- com automação e \textit{feedback} rápido. A Figura~\ref{fig:cicd} apresenta um diagrama de processo de \textit{Continuous Delivery}.
 
 \begin{center}
-\begin{tikzpicture}[
-  font=\scriptsize\sffamily,
-  node distance=0.5cm and 0.45cm,
-  stage/.style={draw, rounded corners=2pt, align=center, inner sep=5pt, minimum width=2.15cm, minimum height=1.15cm},
-  arr/.style={-{Latex}, thick}
-]
-  \node[stage, fill=gray!12] (commit) {\textbf{Commit}\\repositório};
-  \node[stage, fill=blue!10, right=of commit] (build) {\textbf{Build}\\compilar};
-  \node[stage, fill=orange!12, right=of build] (test) {\textbf{Testes}\\unit + integração};
-  \node[stage, fill=yellow!16, right=of test] (stage) {\textbf{Staging}\\ambiente pré};
-  \node[stage, fill=green!12, right=of stage] (prod) {\textbf{Produção}\\release};
-  \draw[arr] (commit) -- (build);
-  \draw[arr] (build) -- (test);
-  \draw[arr] (test) -- (stage);
-  \draw[arr] (stage) -- (prod);
-  \draw[arr, dashed] (prod.south) -- ++(0,-0.55) -| node[pos=0.25, below, font=\tiny\sffamily] {feedback / monitoramento} (commit.south);
-  \node[above=0.15cm of build, font=\tiny\sffamily\bfseries] {CI};
-  \node[above=0.15cm of stage, font=\tiny\sffamily\bfseries] {CD};
-\end{tikzpicture}
-\captionof{figure}{\textit{Pipeline} DevOps/CI/CD: da integração contínua à entrega/deploy contínuo, com feedback.}
+\includegraphics[width=0.95\textwidth]{continuous-delivery-pipeline.png}
+\captionof{figure}{Diagrama de processo de \textit{Continuous Delivery} (pipeline CI/CD): do código à liberação, com etapas automatizadas.}
 \label{fig:cicd}
-\fonte{Elaboração própria, a partir de Humble e Farley \cite{humble2010} e Fowler \cite{fowlercd}.}
+\fonte{Wikimedia Commons --- derivado de \textit{Continuous Delivery process diagram.svg}, autor Grégoire Détrez, licença CC BY-SA 4.0. Disponível em: \url{https://commons.wikimedia.org/wiki/File:Continuous_Delivery_process_diagram.svg}.}
 \end{center}
 
 \textbf{Integração Contínua (CI).} Cada mudança integrada ao repositório dispara \textit{build} e testes automatizados. Isso força cooperação diária sobre a linha principal: conflitos e quebras aparecem cedo, quando ainda são baratos de corrigir. A CI é, em essência, colaboração contínua mediada por \textit{pipeline}.
@@ -220,7 +167,9 @@ Assim, DevOps/CI/CD não são apenas ``ferramentas de automação'': são a exte
 \section{Síntese para estudo}
 \label{sec:sintese}
 
-\begin{center}
+\Needspace{12\baselineskip}
+\noindent\begin{minipage}{\textwidth}
+\centering
 \captionof{table}{Exemplos do dia a dia de SE sob a ótica dos 3 Cs.}
 \label{tab:sintese}
 \begin{tabularx}{\textwidth}{@{}lX@{}}
@@ -233,7 +182,7 @@ Cooperação   & Código no repositório, \textit{pair programming}, \textit{wik
 \bottomrule
 \end{tabularx}
 \fonte{Elaboração própria.}
-\end{center}
+\end{minipage}
 
 Ferramentas (Git/GitHub), métodos (Scrum/XP) e práticas de entrega (DevOps/CI/CD) são camadas complementares do mesmo fenômeno: \textbf{fazer software com e através de outras pessoas}, de forma sustentável e com qualidade.
 
