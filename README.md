@@ -21,11 +21,13 @@
 - [Aula 3.1 — Elicitação: características de um bom requisito](notas/estudo-aula03-1-elicitacao.md)
 - [Atividade Aula 04.0 — Construção de software (Grok)](notas/atividade-aula04-construcao.md)
 - [Aula 4.3 — Qualidade de software (SQuaRE)](notas/estudo-aula04-3-qualidade-de-software.md)
+- [Aula 16/11 — Qualidade + aviso prova 23/11](notas/estudo-aula-2026-11-16-qualidade.md)
 - [Estudo dirigido — Desenvolvimento colaborativo (3 Cs, Git, ágil, DevOps)](notas/estudo-desenvolvimento-colaborativo.md) · [PDF ABNT/UTP](notas/estudo-desenvolvimento-colaborativo.pdf) · [fonte LaTeX](notas/estudo-desenvolvimento-colaborativo.tex)
 - [Atividade Aula 4.3 — SQuaRE (Lucas Müller Scuzziato)](projetos/atividade-aula04-3-square-Lucas_Muller_Scuzziato.md)
 - [Atividade Code Smells 26/10 — Lucas Muller Scuzziato](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.md) · [PDF](projetos/atividade-code-smells-26out-Lucas_Muller_Scuzziato.pdf)
 - [**ED1 Peça Certa — entrega**](notas/ED1-PecaCerta-entrega.md) · [`.docx`](notas/ED1-PecaCerta-entrega.docx) · prazo **21/09**
 - [**Revisão prova 1 — completa**](notas/revisao-prova1-completo.md) · gabarito curto: [estudo-prova1-ajuda-gabarito.md](notas/estudo-prova1-ajuda-gabarito.md) · PDF: `notas/Ajuda-res.prova-1bim.pdf` · canvas: [canvases/revisao-es-prova1.canvas.tsx](canvases/revisao-es-prova1.canvas.tsx)
+- [**Revisão prova 2 — 23/11**](notas/revisao-prova2-23nov.md) · PDF: `material/questoes de revisão - 2o bimestre 20262.pdf` · slide GCS: `material/slides/Engenharia de Software - aula 4.4 - gerencia de configuracao de sw.pdf`
 - [Padlet — comentários (etapa 1 do ED)](notas/padlet-comentarios.md)
 - [Tarefas pendentes](notas/tarefas.txt)
 
